@@ -11,7 +11,7 @@ private val streamsDataSource: StreamsDataSource
 
     override suspend fun getStreams(cursor: String?): Pair<String?, List<Stream>> {
 //        TODO("Not yet implemented")
-        val response = streamsDataSource.getStreams()
+        val response = streamsDataSource.getStreams(cursor)
         return Pair(response?.pagination?.cursor, response?.data) as Pair<String?, List<Stream>>
     }
 
