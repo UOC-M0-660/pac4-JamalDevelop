@@ -1,11 +1,12 @@
-package edu.uoc.pac4.data.di
+package edu.uoc.pac4
 
 import android.app.Application
+import edu.uoc.pac4.data.di.dataModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin
 
-class MyApication  : Application(){
+class MyAplication  : Application(){
     override fun onCreate() {
         super.onCreate()
 
