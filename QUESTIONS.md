@@ -8,12 +8,15 @@
 MVVM (Model-View-ViewModel) es un patrón de arquitectura cuyo principal objetivo es la separación de preocupaciones.
 1.	**Las vistas (Views):**
 *   Muestran la interfaz de usuario e informan sobre las acciones del usuario.
+---
 2.	**ViewModel:**
 *	Obtiene la información de su modelo de datos
 *	Aplica la operaciones necesarias y expone los datos relevantes a sus Vistas.
 *	Expone eventos de backend a las vistas para que puedan reaccionar en consecuencia.
+---
 3.	**Model:**
 *	El modelo, también conocido como DataModel, recupera información de su backend y lo pone a disposición de sus ViewModels.
+---
 -   Principales ventajas e inconvenientes:
 *	MVVM facilita la prueba unitaria de su código.
 *	MVVM puede ser demasiado complejo para aplicaciones con una interfaz de usuario simple.
