@@ -7,19 +7,19 @@
 ##### ¿En qué consiste esta arquitectura?
 MVVM (Model-View-ViewModel) es un patrón de arquitectura cuyo principal objetivo es la separación de preocupaciones.
 1.	**Las vistas (Views):**
-Muestran la interfaz de usuario e informan sobre las acciones del usuario.
+*   Muestran la interfaz de usuario e informan sobre las acciones del usuario.
 2.	**ViewModel:**
-•	Obtiene la información de su modelo de datos
-•	Aplica la operaciones necesarias y expone los datos relevantes a sus Vistas.
-•	Expone eventos de backend a las vistas para que puedan reaccionar en consecuencia.
+*	Obtiene la información de su modelo de datos
+*	Aplica la operaciones necesarias y expone los datos relevantes a sus Vistas.
+*	Expone eventos de backend a las vistas para que puedan reaccionar en consecuencia.
 3.	**Model:**
-•	El modelo, también conocido como DataModel, recupera información de su backend y lo pone a disposición de sus ViewModels.
-Principales ventajas e inconvenientes:
-•	MVVM facilita la prueba unitaria de su código.
-•	MVVM puede ser demasiado complejo para aplicaciones con una interfaz de usuario simple.
-•	MVVM resuelve el problema del controlador de grasa proporcionando una mejor separación de preocupaciones.
-•	MVVM combina las ventajas de MVP y MVC patrones de arquitectura con otras características útiles como DataBinding. Mejora la capacidad de prueba de su código al proporcionar un mayor nivel de abstracción y reducir la cantidad de código de placa de caldera en sus proyectos.
-•	Agregar ViewModels, cuyo propósito principal es estar completamente separado de las Vistas, reduce el riesgo de tener demasiado código en las otras capas.
+*	El modelo, también conocido como DataModel, recupera información de su backend y lo pone a disposición de sus ViewModels.
+*Principales ventajas e inconvenientes:
+*	MVVM facilita la prueba unitaria de su código.
+*	MVVM puede ser demasiado complejo para aplicaciones con una interfaz de usuario simple.
+*	MVVM resuelve el problema del controlador de grasa proporcionando una mejor separación de preocupaciones.
+*	MVVM combina las ventajas de MVP y MVC patrones de arquitectura con otras características útiles como DataBinding. Mejora la capacidad de prueba de su código al proporcionar un mayor nivel de abstracción y reducir la cantidad de código de placa de caldera en sus proyectos.
+*	Agregar ViewModels, cuyo propósito principal es estar completamente separado de las Vistas, reduce el riesgo de tener demasiado código en las otras capas.
 
 
 ##### ¿Cuáles son sus ventajas?
