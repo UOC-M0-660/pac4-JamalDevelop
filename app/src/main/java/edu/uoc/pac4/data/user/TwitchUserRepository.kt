@@ -6,13 +6,14 @@ package edu.uoc.pac4.data.user
 
 class TwitchUserRepository(
     // TODO: Add any datasources you may need
+private val userDataSource: UserDataSource
 ) : UserRepository {
 
     override suspend fun getUser(): User? {
-        TODO("Not yet implemented")
+        return userDataSource.getUser()
     }
 
     override suspend fun updateUser(description: String): User? {
-        TODO("Not yet implemented")
+        return userDataSource.updateUserDescription(description)
     }
 }
