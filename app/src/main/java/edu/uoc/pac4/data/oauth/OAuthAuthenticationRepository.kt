@@ -1,10 +1,14 @@
 package edu.uoc.pac4.data.oauth
 
+import edu.uoc.pac4.data.SessionManager
+
 /**
  * Created by alex on 11/21/20.
  */
 class OAuthAuthenticationRepository(
     // TODO: Add any datasources you may need
+private val tokensDataSource: TokensDataSource,
+private val sessionManager: SessionManager
 ) : AuthenticationRepository {
 
     override suspend fun isUserAvailable(): Boolean {
